@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="600" height="600">
+</canvas>
+<script>
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+function draw(){	
+	for(j=0; j<=50; j++){
+		for(i=0; i<=9; i++){
+			context.fillStyle = "000000"
+			context.fillRect(80*i, 80*j, 40, 40);
+		}
+	}
+	for(j=0; j<=50; j++){
+		for(i=0; i<=9; i++){
+			context.fillStyle = "000000"
+			context.fillRect((80*i)+40, (80*j)+40, 40, 40);
+		}
+	}	
+}
+
+</script>
+</body>
+</html>
